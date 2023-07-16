@@ -1,30 +1,25 @@
-/* Селектор типу (тегу) - 0001 */
 h1 {
   color: blue;
+  font-family: initial; /* вимикає спадковість'*/
+  border: inherit; /* вмикає спадкування */
 }
 
-/* Селектор класу 0010 */
-.annotation {
-  font-size: 10px;
+body {
+  font-family: sans-serif;
+  border: 5px red solid;
+  text-align: center;
+  color: darkgray;
 }
 
-p {
-  font-size: 20px;
+p{
+  font-family: monospace;
 }
 
-/* Селектор ідентифікатора - 0100 */
-#subscribe-btn {
-  color: red !important;
+/* use case*/
+a{
+  color: inherit;
+  text-decoration: none;
 }
-
-/* subscribe-btn : cebab-case
-subscribeBtn  : camelCase (
-                  lowerCamelCase, 
-                  UpperCamelCase (PascalCase)
-                )
-subscribe_btn : snake_case 
-I_AM_CONSTANT
-*/
 
 /*
   каскідність - якщо она і та сама властивість визначена для одного
@@ -34,4 +29,8 @@ I_AM_CONSTANT
 /*
   специфічність - якщо одна і та сама властивість записана 
   в різних по специфічності селекторазх, то приорітетніша в селекторі з більшою специфічнічтю
+*/
+
+/*  
+  спадкування - властивості для тектту успадковуються від батька
 */
