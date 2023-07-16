@@ -1,36 +1,67 @@
-h1 {
-  color: blue;
-  font-family: initial; /* вимикає спадковість'*/
-  border: inherit; /* вмикає спадкування */
-}
+/* Блокова модель */
 
 body {
-  font-family: sans-serif;
-  border: 5px red solid;
-  text-align: center;
-  color: darkgray;
+  /* text-align: right; */
+
 }
 
-p{
-  font-family: monospace;
+p {
+  width: 200px;
+  /* height: 300px; */
+  /* background-color: blanchedalmond; */
+  border: 1px solid red;
+  padding: 20px;
+  margin: 10px;
+
+  display: inline-block; 
+  /* text-align: initial; */
+  vertical-align: middle;
 }
 
-/* use case*/
+a {
+  width: 100px;
+  height: 50px;
+  border: 1px solid green;
+  padding: 20px;
+  margin: 10px;
+
+  display: inline-block;
+}
+
+/* display: inline-block; - стають поряд, як рядкові, і мають розміри, як блокові */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* приклад*/
 a{
   color: inherit;
   text-decoration: none;
 }
 
-/*
-  каскідність - якщо она і та сама властивість визначена для одного
-  і того самого селектора, то приорітетна та, що оголешена останньою
-*/
-
-/*
-  специфічність - якщо одна і та сама властивість записана 
-  в різних по специфічності селекторазх, то приорітетніша в селекторі з більшою специфічнічтю
-*/
-
-/*  
-  спадкування - властивості для тектту успадковуються від батька
-*/
+.nav-link-item {
+  display: inline;
+}
