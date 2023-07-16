@@ -1,21 +1,21 @@
 /* Блокова модель */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   /* text-align: right; */
-
+  margin: 0;
 }
 
 p {
-  width: 200px;
-  /* height: 300px; */
-  /* background-color: blanchedalmond; */
-  border: 1px solid red;
+  width: 100%;
+  border: 5px solid red;
   padding: 20px;
-  margin: 10px;
 
   display: inline-block; 
-  /* text-align: initial; */
-  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 /* a {
@@ -28,37 +28,12 @@ p {
   display: inline-block;
 } */
 
-/* display: inline-block; - стають поряд, як рядкові, і мають розміри, як блокові */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* display: inline-block; -  стають поряд, як рядкові, 
+                          і мають розміри, як блокові */
 
 /* приклад*/
 
-ul {
+/* ul {
   text-align: center;
 }
 
@@ -75,4 +50,4 @@ a {
   width: 70px;
   text-align: center;
   display: inline-block;
-}
+} */
