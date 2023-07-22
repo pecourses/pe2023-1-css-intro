@@ -2,52 +2,32 @@
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  /* text-align: right; */
+  /* border: 3px solid red; */
   margin: 0;
 }
 
-p {
-  width: 100%;
-  border: 5px solid red;
-  padding: 20px;
-
-  display: inline-block; 
-  box-sizing: border-box;
-}
-
-/* a {
-  width: 100px;
-  height: 50px;
-  border: 1px solid green;
-  padding: 20px;
-  margin: 10px;
-
-  display: inline-block;
-} */
-
-/* display: inline-block; -  стають поряд, як рядкові, 
-                          і мають розміри, як блокові */
-
-/* приклад*/
-
-/* ul {
+body {
   text-align: center;
 }
 
-.nav-link-item {
+.class1 {
   display: inline;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid grey;
-  padding: 15px 25px;
-  margin: 0 20px;
-  width: 70px;
-  text-align: center;
+.class2 {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.class3 {
   display: inline-block;
-} */
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  border: 3px solid green;
+  max-width: 800px;
+  width: 100%;
+  min-width: 320px;
+}
