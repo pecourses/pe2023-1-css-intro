@@ -1,31 +1,23 @@
-html {
-  font-size: 16px;
-}
-/* p {
-  text-align: ;
-  font-size: 1rem;
-  font-family: ;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* 
 Абсолютні - px
 Відносні  - em (1em = 100% від шрифта батьківського ел)
             rem (1rem = 100% від шрифта рутового ел)
-            vw (1vw - 1% видимої частини вікна браузера)
+            vw (1vw - 1% видимої частини ширини вікна браузера)
+            vh (1vh - 1% видимої частини висоти вікна браузера)
 */
 
-h1 {
-  font-size: 2rem;
-}
-
-p {
+/* p {
+  text-align: ;
   font-size: 1rem;
-}
+  font-family: ;
+  font-weight: ; 
+  font-style: ; 
+} */
 
-div {
-  font-size: 1.5rem;
-}
-
-article {
-  font-size: 2.25rem;
+body {
+  font-family: Lato, sans-serif;
+  /* font-weight: ; */
+  /* font-style: normal; */
 }
