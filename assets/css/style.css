@@ -1,32 +1,3 @@
-h1, h2 {
-  font-style: italic;
-}
-
-/*
-Комбінатори:
-- > дочірніх ел
--  потомків
-
-- ~ сусідніх (наступних) елементів 
-- + наступного елемента
-*/
-
-body > * {
-  border: 1px solid red;
-}
-/* Зробити жирним тільки ті абзаци, які в section */
-section > p {
-  font-weight: bold ;
-}
-
-section h2 {
-  color:blueviolet;
-}
-
-h2 + p {
-  background-color: aqua;
-}
-
-h2+p~p {
-  color: blue;
+.bg {
+  background-image: url('https://images.pexels.com/photos/3222255/pexels-photo-3222255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
