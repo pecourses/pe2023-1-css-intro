@@ -1,29 +1,31 @@
-body {
+html {
   font-size: 16px;
 }
-
-p {
-  /* text-align: ; */
-  font-size: 1em;
-  /* font-family: ; */
-}
+/* p {
+  text-align: ;
+  font-size: 1rem;
+  font-family: ;
+} */
 
 /* 
 Абсолютні - px
 Відносні  - em (1em = 100% від шрифта батьківського ел)
             rem (1rem = 100% від шрифта рутового ел)
-
+            vw (1vw - 1% видимої частини вікна браузера)
 */
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 div {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 article {
-  font-size: 2.25em;
+  font-size: 2.25rem;
 }
-/* 36px=2.25em */
