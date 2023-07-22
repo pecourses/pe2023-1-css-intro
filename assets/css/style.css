@@ -14,10 +14,25 @@
   font-family: ;
   font-weight: ; 
   font-style: ; 
+  line-height:; (найуніверсальніше задавати коефіцієнтом)
 } */
 
 body {
   font-family: Lato, sans-serif;
   /* font-weight: ; */
   /* font-style: normal; */
+  line-height: 1.15;
+}
+
+div {
+  white-space: pre;
+}
+
+h2 {
+  border: 2px solid red;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px;
 }
