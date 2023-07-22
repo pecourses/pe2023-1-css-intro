@@ -1,33 +1,29 @@
-/* Блокова модель */
-
-* {
-  box-sizing: border-box;
-  /* border: 3px solid red; */
-  margin: 0;
-}
-
 body {
-  text-align: center;
+  font-size: 16px;
 }
 
-.class1 {
-  display: inline;
+p {
+  /* text-align: ; */
+  font-size: 1em;
+  /* font-family: ; */
 }
 
-.class2 {
-  display: block;
-  width: 80px;
-  margin: 0 auto;
+/* 
+Абсолютні - px
+Відносні  - em (1em = 100% від шрифта батьківського ел)
+            rem (1rem = 100% від шрифта рутового ел)
+
+*/
+
+h1 {
+  font-size: 2em;
 }
 
-.class3 {
-  display: inline-block;
+div {
+  font-size: 1.5em;
 }
 
-.content-wrapper {
-  margin: 0 auto;
-  border: 3px solid green;
-  max-width: 800px;
-  width: 100%;
-  min-width: 320px;
+article {
+  font-size: 2.25em;
 }
+/* 36px=2.25em */
