@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Intro</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,25 +15,30 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <article>
+    <article class="userCard">
       <div class="bg">
         <i class="fa-solid fa-pencil"></i>
       </div>
-      <img
-        src="https://images.pexels.com/photos/17121025/pexels-photo-17121025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Jane S. Doe"
-      />
-      <h2>Jane S. Doebg</h2>
-      <div>Amsterdam, Netherlands</div>
-      <div>Copyrighter</div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolor
-        consectetur earum quaerat esse repellat, dolore nesciunt! Fugit, labore
-        magnam.
-      </p>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-facebook-f"></i>
+      <div class="content-wrapper">
+        <img
+          class="userImg"
+          src="https://images.pexels.com/photos/17121025/pexels-photo-17121025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Jane S. Doe"
+        />
+        <h2 class="userName">Jane S. Doe</h2>
+        <div class="userGeoposition">Amsterdam, Netherlands</div>
+        <div class="job">Copyrighter</div>
+        <p class="experience">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolor
+          consectetur earum quaerat esse repellat, dolore nesciunt! Fugit,
+          labore magnam.
+        </p>
+        <footer>
+          <i class="userSocialLink fa-brands fa-instagram"></i>
+          <i class="userSocialLink fa-brands fa-twitter"></i>
+          <i class="userSocialLink fa-brands fa-facebook-f"></i>
+        </footer>
+      </div>
     </article>
   </body>
 </html>
