@@ -2,54 +2,30 @@
   box-sizing: border-box;
 }
 
-html {
-  --user-photo-size: 75px;
-}
-
-.usersList {
+body {
   padding: 15px;
 }
 
-.userListItem {
+.article {
+  max-width: 900px;
+  width: 100%;
+  min-width: 300px;
+  margin: 0 auto;
   box-shadow: 0 0 5px grey;
-  padding: 10px;
-
+  padding: 15px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap-reverse;
   gap: 15px;
 }
 
-.userImageWrapper {
-  width: var(--user-photo-size);
-  height: var(--user-photo-size);
-
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px dotted purple;
-  flex-shrink: 0;
+.articleDescription,
+.imageWrapper {
+  flex-basis: 350px;
+  flex-grow: 1;
 }
 
-.userImageWrapper img {
+.imageWrapper img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
-}
-
-.userName {
-}
-
-.userDescription {
-}
-
-.trashBtn {
-  margin-left: auto;
-
-  border: none;
-  background-color: transparent;
-  color: grey;
-  font-size: 32px;
-}
-
-.trashBtn:hover {
-  cursor: pointer;
 }
