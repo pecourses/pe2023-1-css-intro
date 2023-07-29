@@ -7,6 +7,8 @@
   min-height: 150px;
   /* flex-parent */
   display: flex;
+  /* flex-wrap: wrap; */
+  gap: 10px;
 }
 
 .child {
@@ -14,25 +16,31 @@
   /* flex-child */
   /* order: ; */
   /* align-self: ; */
+  /* width: 200px; */
+  flex-grow: 0; /* дозвіл збільшуватися*/
+  flex-shrink: 1; /* дозвіл зменшуватися*/
+  flex-basis: 300px;
+  /* flex: 0 1 auto; */
+}
+/* лінійний розмір вздовж головної вісі */
+/* content < width/height < flex-basis*/
+
+.child2 {
+  flex-shrink: 4;
 }
 
-.child5 {
-  order: 1;
+/*
+300px*3=900px 
+600px, 
+
+300px
+1/6*300 = 50  => 300-50 = 250
+4/6*300 = 200 => 300-200 = 100
+1/6*300 = 50  => 300-50 = 250
+*/
+
+.another-el {
+  border: 5px solid red;
+
+  width: 200px;
 }
-.child4 {
-  order: 2;
-}
-.child3 {
-  order: 3;
-}
-.child2 {
-  order: 4;
-}
-.child1 {
-  order: 5;
-}
-/* 
-виставити елементи
-6 5 4 3 2 1
-або
-6 4 2 5 3 1 */
