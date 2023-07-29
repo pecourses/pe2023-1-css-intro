@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Intro</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="parent">
-      <div class="child child1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vero
-        explicabo voluptates architecto consequatur inventore commodi dolorum
-        unde officia velit necessitatibus doloremque modi amet, illo molestiae
-        qui, odit nisi vel?
-      </div>
-      <div class="child child2">2</div>
-      <div class="child child3">3</div>
-      <!-- <div class="child child4">4</div>
-      <div class="child child5">5</div>
-      <div class="child child6">6</div> -->
-    </div>
-
-    <div class="another-el">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis magni
-      atque consequuntur eligendi hic enim illo molestiae esse quaerat,
-      voluptates officia quam nesciunt dignissimos, veniam rem cum aspernatur
-      dicta!
-    </div>
+    <ul class="usersList">
+      <li class="userListItem">
+        <div class="userImageWrapper">
+          <img
+            src="https://images.pexels.com/photos/17115831/pexels-photo-17115831.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt="Lorem, ipsum dolor."
+          />
+        </div>
+        <div>
+          <h2 class="userName">Lorem, ipsum dolor.</h2>
+          <div class="userDescription">Lorem.</div>
+        </div>
+        <button class="trashBtn"><i class="fa-solid fa-trash-can"></i></button>
+      </li>
+    </ul>
   </body>
 </html>

@@ -2,45 +2,54 @@
   box-sizing: border-box;
 }
 
-.parent {
-  border: 5px solid blue;
-  min-height: 150px;
-  /* flex-parent */
+html {
+  --user-photo-size: 75px;
+}
+
+.usersList {
+  padding: 15px;
+}
+
+.userListItem {
+  box-shadow: 0 0 5px grey;
+  padding: 10px;
+
   display: flex;
-  /* flex-wrap: wrap; */
-  gap: 10px;
+  align-items: center;
+  gap: 15px;
 }
 
-.child {
-  border: 5px solid red;
-  /* flex-child */
-  /* order: ; */
-  /* align-self: ; */
-  /* width: 200px; */
-  flex-grow: 0; /* дозвіл збільшуватися*/
-  flex-shrink: 1; /* дозвіл зменшуватися*/
-  flex-basis: 300px;
-  /* flex: 0 1 auto; */
-}
-/* лінійний розмір вздовж головної вісі */
-/* content < width/height < flex-basis*/
+.userImageWrapper {
+  width: var(--user-photo-size);
+  height: var(--user-photo-size);
 
-.child2 {
-  flex-shrink: 4;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px dotted purple;
+  flex-shrink: 0;
 }
 
-/*
-300px*3=900px 
-600px, 
+.userImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-300px
-1/6*300 = 50  => 300-50 = 250
-4/6*300 = 200 => 300-200 = 100
-1/6*300 = 50  => 300-50 = 250
-*/
+.userName {
+}
 
-.another-el {
-  border: 5px solid red;
+.userDescription {
+}
 
-  width: 200px;
+.trashBtn {
+  margin-left: auto;
+
+  border: none;
+  background-color: transparent;
+  color: grey;
+  font-size: 32px;
+}
+
+.trashBtn:hover {
+  cursor: pointer;
 }
