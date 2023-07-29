@@ -8,8 +8,7 @@
   /* flex-parent */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between;*/ /*margin*/
-  /* align-items: flex-start; */
+  align-items: center;
 }
 
 .child {
@@ -19,10 +18,6 @@
   /* align-self: ; */
 }
 
-/* .child1 {
-  align-self: center;
-} */
-/* поставити 4й елементи знизу*/
-/* .child4 {
+.child1 {
   align-self: flex-end;
-} */
+}
