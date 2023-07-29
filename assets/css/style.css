@@ -2,46 +2,27 @@
   box-sizing: border-box;
 }
 
-header,
-div,
-footer {
-  border: 2px solid red;
-}
-
-nav,
-main {
-  border: 2px solid green;
-}
-
-body {
+.parent {
+  border: 5px solid blue;
+  min-height: 150px;
+  /* flex-parent */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
+  /* justify-content: space-between;*/ /*margin*/
+  /* align-items: flex-start; */
 }
 
-header,
-footer {
-  width: 100%;
+.child {
+  border: 5px solid red;
+  /* flex-child */
+  /* order: ; */
+  /* align-self: ; */
 }
 
-div {
-  max-width: 1000px;
-  width: 100%;
-  min-width: 320px;
-  padding: 0;
-
-  display: flex;
-}
-
-nav {
-  width: 25%;
-}
-
-main {
-  width: 75%;
-}
-
-footer {
-  margin-top: auto;
-}
+/* .child1 {
+  align-self: center;
+} */
+/* поставити 4й елементи знизу*/
+/* .child4 {
+  align-self: flex-end;
+} */
