@@ -2,61 +2,31 @@
   box-sizing: border-box;
 }
 
-body {
-  padding: 15px;
-  background-color: bisque;
-  display: flex;
-  flex-wrap: wrap;
+a {
+  color: inherit;
 }
 
-.userCard {
-  margin: 10px;
-  background-color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  flex-basis: 300px;
-  flex-grow: 1;
-  min-width: 260px;
-  max-width: 400px;
+a:link {
+  color: yellow;
 }
 
-.editBtn {
-  align-self: flex-end;
+a:visited {
+  color: red;
 }
 
-.userImg {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: -20px;
+a:hover {
+  color: orange;
 }
 
-.userDescription {
-  text-align: center;
+a:active {
+  color: green;
 }
 
-.memberSection {
-  border: 1px solid red;
-  margin-top: auto;
-
-  align-self: stretch;
-
-  display: flex;
-  justify-content: space-between;
+input {
+  outline: none;
+  border: 1px solid black;
 }
 
-.cardFooter {
-}
-
-.socialLinks {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.socialLinkItem {
+input:focus {
+  background-color: aquamarine;
 }
