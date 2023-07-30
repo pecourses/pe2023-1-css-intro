@@ -49,26 +49,21 @@
   bottom: 0px;
   right: 10px;
 }
-/* поставити 4й елемент в верхній правий кут */
-/* поставити 5й елемент по центру (приблизно) */
 
-header {
-  background-image: url('https://images.pexels.com/photos/15679391/pexels-photo-15679391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+/* fixed
+- місце в потоці не резервується 
+*/
+.child:nth-child(4) {
+  background-color: lightblue;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
-.bg-cover {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+p {
+  background-color: aquamarine;
+  position: fixed;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
 }
