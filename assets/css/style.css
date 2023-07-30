@@ -52,16 +52,23 @@
 /* поставити 4й елемент в верхній правий кут */
 /* поставити 5й елемент по центру (приблизно) */
 
-.child:nth-child(4) {
-  position: absolute;
-  top: 0;
-  right: 0;
+header {
+  background-image: url('https://images.pexels.com/photos/15679391/pexels-photo-15679391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.child:nth-child(5) {
+.bg-cover {
   position: absolute;
-  right: -50px;
-  bottom: -50px;
-  border-radius: 50%;
-  background-color: green;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
