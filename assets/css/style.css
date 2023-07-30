@@ -2,31 +2,67 @@
   box-sizing: border-box;
 }
 
-a {
-  color: inherit;
+:root {
+  --article-width: yellow;
 }
 
-a:link {
-  color: yellow;
+section *,
+article * {
+  margin-bottom: 10px;
 }
 
-a:visited {
+/* section :first-child {
   color: red;
 }
 
-a:hover {
-  color: orange;
-}
-
-a:active {
+section :last-child {
   color: green;
-}
+} */
 
-input {
-  outline: none;
-  border: 1px solid black;
-}
-
-input:focus {
+/* p:first-of-type {
   background-color: aquamarine;
+}
+
+div:first-of-type {
+  background-color: blueviolet;
+} */
+
+/* div:first-child {
+  color: yellow;
+} */
+
+section :nth-child(2n) {
+  color: gray;
+}
+
+section :nth-child(2n + 1) {
+  color: blue;
+}
+
+/* section :nth-child(4) {
+  background-color: green;
+} */
+
+/* section :nth-child(3n + 2) {
+  border-left: 5px solid red;
+} */
+
+/* :first-child
+:first-of-type
+
+:last-child
+:last-of-type
+
+:nth-child()
+:nth-of-type() */
+
+/* Виділити курсивом перший абзац
+Виділити жирним останній абзац */
+
+p:first-of-type {
+  font-style: italic;
+}
+
+article :last-child {
+  font-weight: bold;
 }
