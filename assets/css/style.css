@@ -38,7 +38,7 @@
 }
 
 /* absolute
-- місце в потоці не резервується 
+- місце в потоці НЕ резервується 
 - top, right, bottom, left 
   відносно положення найближчого 
   позиціонованого предка
@@ -52,18 +52,25 @@
 
 /* fixed
 - місце в потоці не резервується 
+- top, right, bottom, left 
+  відносно вьюпорта
 */
 .child:nth-child(4) {
-  background-color: lightblue;
+  /* background-color: lightblue;
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 0; */
 }
 
-p {
-  background-color: aquamarine;
-  position: fixed;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+/* stycky
+- змішана поведінка relative і fixed:
+  елементи намагається знаходитися на заданій позиції 
+  відносно вьюпорта, але при цьому він не має права 
+  знаходитися поза межами батьківського блока
+*/
+
+.child:nth-child(5) {
+  background-color: violet;
+  position: sticky;
+  top: 0;
 }
