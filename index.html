@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Intro</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,46 +15,35 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- section>(p>lorem5^div>lorem20)*4 -->
-    <section>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nisi.
-        Debitis tempora vitae quibusdam ab, assumenda alias deserunt. Quod,
-        perspiciatis?
-      </div>
-      <p>Dolore soluta quo fugiat odio.</p>
-      <div>
-        Repellat consequuntur, atque eligendi maiores reiciendis expedita amet
-        quasi totam excepturi nam quae, deleniti exercitationem fugiat nihil
-        temporibus odio cumque.
-      </div>
-      <p>Consequuntur quae cum nulla iure!</p>
-      <div>
-        Voluptates numquam minima, perferendis molestiae sint ipsum eos
-        voluptatem quae facere inventore eligendi a impedit, ducimus eaque, illo
-        iure quidem.
-      </div>
-      <p>At mollitia fuga libero sint!</p>
-      <div>
-        Nam exercitationem libero reiciendis amet quos? Voluptatibus, deleniti
-        quae facilis, natus ex aliquid rem nobis, quod amet odit reprehenderit
-        earum!
-      </div>
-    </section>
-    <article>
-      <h2>Lorem ipsum?</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis!
-      </p>
-      <p>
-        Animi expedita rerum facilis et error reprehenderit perspiciatis rem
-        nulla.
-      </p>
-      <p>
-        Error nemo cumque officiis ratione, quisquam nihil maiores? Delectus,
-        corporis?
-      </p>
-    </article>
+    <!-- tr - table row  -->
+    <!-- td - table data  -->
+    <!-- th - table heading -->
+    <!-- colspan, rowspan -->
+    <table>
+      <caption>
+        Tag semantic
+      </caption>
+      <thead>
+        <tr>
+          <th>IsSemantic?</th>
+          <th>Elements</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Semantic</td>
+          <td>header, footer</td>
+        </tr>
+        <tr>
+          <td>Nosemantic</td>
+          <td>div, span</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Lorem.</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
