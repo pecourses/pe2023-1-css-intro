@@ -2,20 +2,39 @@
   box-sizing: border-box;
 }
 
-.btn {
-  border: none;
-  border-radius: 15px;
-  padding: 5px 10px;
-  margin: 20px;
+body {
+  background-color: grey;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   color: white;
-  background-color: darkgreen;
-  transition: background-color 1s linear, box-shadow 0.2s ease-in 0.5s;
-  /* transition: all 1s linear; */
 }
 
-.btn:hover {
-  background-color: lightgreen;
-  box-shadow: 0 0 5px black;
+.bg {
+  background-image: url('https://images.pexels.com/photos/1819631/pexels-photo-1819631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  filter: blur(3px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
-/* реалізувати поступову появу box-shadow */
+h1,
+.bg {
+  transition: filter 0.5s ease-in;
+}
+
+header:hover h1 {
+  filter: blur(1px);
+}
+
+header:hover .bg {
+  filter: blur(0);
+}
