@@ -1,48 +1,40 @@
+/* 0 - infinity */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: grey;
+  font-size: clamp(16px, 4vw, 40px);
 }
 
-header {
-  min-height: 100vh;
+section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  color: white;
+
+  gap: 10px;
 }
 
-.bg {
-  background-image: url('https://images.pexels.com/photos/1819631/pexels-photo-1819631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  filter: blur(3px);
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+p {
+  padding: 30px;
+  background-color: green;
 }
 
-h1,
-.bg {
-  transition: filter 0.5s ease-in;
+/* mobile-first*/
+/* 400 - infinity */
+@media screen and (min-width: 400px) {
+  p {
+    padding: 40px;
+  }
 }
 
-header:hover h1 {
-  filter: blur(1px);
+/* 600 - infinity */
+@media screen and (min-width: 600px) {
+  section {
+    flex-direction: row;
+  }
+  p {
+    padding: 20px;
+  }
 }
-
-header:hover .bg {
-  filter: blur(0);
-}
-button {
-  transition: transform 0.5s;
-}
-
-button:hover {
-  transform: scale(1.1);
-}
+/* 400-599 p padding 40px */
+/* 600+    p padding 20px */
