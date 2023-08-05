@@ -2,51 +2,20 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  /* background-color: red; */
-}
-
-.order {
-  width: 100%;
-  min-width: 300px;
-  max-width: 350px;
-  padding: 25px;
-  background-image: linear-gradient(to right, #8ac7f6, #1891e2);
+.btn {
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 20px;
   color: white;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
+  background-color: darkgreen;
+  transition: background-color 1s linear, box-shadow 0.2s ease-in 0.5s;
+  /* transition: all 1s linear; */
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+.btn:hover {
+  background-color: lightgreen;
+  box-shadow: 0 0 5px black;
 }
 
-.order-count {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-.order::after,
-.order::before {
-  content: '';
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-.order::before {
-  bottom: -90px;
-  right: -20px;
-}
-
-.order::after {
-  bottom: 40px;
-  right: -80px;
-}
+/* реалізувати поступову появу box-shadow */
