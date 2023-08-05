@@ -9,6 +9,7 @@ body {
 header {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -37,4 +38,11 @@ header:hover h1 {
 
 header:hover .bg {
   filter: blur(0);
+}
+button {
+  transition: transform 0.5s;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
