@@ -2,44 +2,51 @@
   box-sizing: border-box;
 }
 
-/* .first-letter {
-} */
-
-p::first-letter {
-  font-size: 30px;
-  color: red;
-}
-
-p::first-line {
-  font-style: italic;
-}
-
 body {
-  background-color: burlywood;
+  font-family: sans-serif;
+  /* background-color: red; */
 }
 
-*::selection {
-  background-color: grey;
+.order {
+  width: 100%;
+  min-width: 300px;
+  max-width: 350px;
+  padding: 25px;
+  background-image: linear-gradient(to right, #8ac7f6, #1891e2);
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
-p::before {
-  content: 'Paragraph: ';
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-p::after {
-  content: ' - End of paragraph';
+.order-count {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
-/* Обгорнути заголовок в << >> лапки */
-
-h1::before {
-  content: '<<';
+.order::after,
+.order::before {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
-h1::after {
-  content: '>>';
+.order::before {
+  bottom: -90px;
+  right: -20px;
 }
 
-li::marker {
-  color: aqua;
+.order::after {
+  bottom: 40px;
+  right: -80px;
 }
