@@ -2,75 +2,44 @@
   box-sizing: border-box;
 }
 
-.parent {
-  border: 5px solid green;
-  position: relative;
-  width: 400px;
-  height: 400px;
+/* .first-letter {
+} */
+
+p::first-letter {
+  font-size: 30px;
+  color: red;
 }
 
-.child {
-  border: 5px solid red;
-  width: 100px;
-  height: 100px;
+p::first-line {
+  font-style: italic;
 }
 
-/* static */
-.child:nth-child(1) {
-  position: static; /*default*/
+body {
+  background-color: burlywood;
 }
 
-/* relative - 
-1 місце в потоці резервується
-2 top, right, bottom, left 
-  відносно свого положення 
-  в нормальному потоці
-*/
-.child:nth-child(2) {
-  background-color: yellow;
-  position: relative;
-  /* top: 50px; */
-  /* bottom: -20px; */
-  /* left: 100px; */
-  /* right: 20px; */
-  /* top: 50px; */
-  /* z-index: -1; */
+*::selection {
+  background-color: grey;
 }
 
-/* absolute
-- місце в потоці НЕ резервується 
-- top, right, bottom, left 
-  відносно положення найближчого 
-  позиціонованого предка
-*/
-.child:nth-child(3) {
-  background-color: orange;
-  position: absolute;
-  bottom: 0px;
-  right: 10px;
+p::before {
+  content: 'Paragraph: ';
 }
 
-/* fixed
-- місце в потоці не резервується 
-- top, right, bottom, left 
-  відносно вьюпорта
-*/
-.child:nth-child(4) {
-  /* background-color: lightblue;
-  position: fixed;
-  left: 0;
-  bottom: 0; */
+p::after {
+  content: ' - End of paragraph';
 }
 
-/* stycky
-- змішана поведінка relative і fixed:
-  елементи намагається знаходитися на заданій позиції 
-  відносно вьюпорта, але при цьому він не має права 
-  знаходитися поза межами батьківського блока
-*/
+/* Обгорнути заголовок в << >> лапки */
 
-.child:nth-child(5) {
-  background-color: violet;
-  position: sticky;
-  top: 0;
+h1::before {
+  content: '<<';
+}
+
+h1::after {
+  content: '>>';
+}
+
+li::marker {
+  color: aqua;
 }
