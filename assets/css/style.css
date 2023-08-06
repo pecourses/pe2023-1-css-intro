@@ -2,73 +2,29 @@
   box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.outer-container {
+  border: 2px solid green;
 }
 
-header {
-  padding: 20px;
-  min-height: 100px;
-  color: wheat;
-  background-color: black;
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
+.inner-block {
+  border: 2px solid red;
 }
 
-.under-header {
-  height: 100px;
+.grid-parent {
+  display: grid;
+  /* явна сітка */
+  /* grid */
+  /* px, %, vw, fr, minmax(320px, 800px) */
+  /* repeat (фіксована кількість| автокількість (auto-fill/fit), ширина)*/
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+  /* неявна сітка */
+  grid-auto-flow: row;
+  grid-auto-rows: 75px;
 }
 
-h1 {
-  font-size: 2rem;
-}
+/* Задати сітку 4*4 по 200px рядки, */
+/* стовпці однакові за шириною */
 
-.menu {
-  display: flex;
-}
-
-nav:hover > .burger + .menu {
-  right: 0;
-}
-
-a {
-  display: flex;
-  justify-content: center;
-  padding: 10px 20px;
-  background-color: black;
-  border: 2px solid wheat;
-  transition: background-color 0.5s;
-}
-
-.burger {
-  display: none;
-  padding: 5px;
-  border: 2px solid wheat;
-  border-radius: 5px;
-  font-size: 1.6rem;
-}
-
-p {
-  font-size: 50px;
-  margin: 20px;
-}
-
-@media screen and (max-width: 700px) {
-  .menu {
-    position: absolute;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.5s;
-  }
-  .burger {
-    display: inline-block;
-  }
+.grid-child {
 }
