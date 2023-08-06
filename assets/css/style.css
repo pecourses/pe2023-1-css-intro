@@ -15,19 +15,29 @@
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
   gap: 10px;
-  justify-items: start;
-  align-items: end;
+
+  grid-template-areas:
+    'b1 b2 b3'
+    'b4 . b5'
+    'b6 b6 b6';
+  /* ASCII-графіка */
 }
 
 .grid-child:nth-child(1) {
-  order: 6;
-  justify-self: stretch;
-  align-self: center;
+  grid-area: b1;
 }
-
-/* Другий елемент на всю комірку */
 .grid-child:nth-child(2) {
-  order: 5;
-  justify-self: stretch;
-  align-self: stretch;
+  grid-area: b2;
+}
+.grid-child:nth-child(3) {
+  grid-area: b3;
+}
+.grid-child:nth-child(4) {
+  grid-area: b4;
+}
+.grid-child:nth-child(5) {
+  grid-area: b5;
+}
+.grid-child:nth-child(6) {
+  grid-area: b6;
 }
