@@ -46,8 +46,21 @@ body {
   grid-area: pageNav;
 }
 
+.inner-block {
+  height: 80px;
+  border: 2px solid green;
+}
+
 .main {
+  padding: 20px;
+
   grid-area: pageMain;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 20px;
+
+  align-content: start;
 }
 
 .footer {
