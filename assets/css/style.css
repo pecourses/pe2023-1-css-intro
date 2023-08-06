@@ -2,38 +2,93 @@
   box-sizing: border-box;
 }
 
-.outer-container {
+/* .outer-container {
   border: 2px solid green;
-  height: 400px;
 }
 
 .inner-block {
   border: 2px solid red;
-  width: 50px;
-  height: 50px;
 }
 
 .grid-parent {
   display: grid;
-  /* явна сітка */
-  /* grid */
-  /* px, %, vw, fr, minmax(320px, 800px) */
-  /* repeat (фіксована кількість| автокількість (auto-fill/fit), ширина)*/
   grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(2, 100px);
-
-  /* розташування елементів вздовж осей всередені комірки */
-  /* розташувати кожен елемент в верхньому правому куті*/
-  justify-items: end;
-  align-items: start;
-
-  /* розташування комірок вздовж осей */
-  justify-content: center;
-  align-content: center;
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
 }
 
-/* Задати сітку 4*4 по 200px рядки, */
-/* стовпці однакові за шириною */
-
 .grid-child {
+}
+
+.grid-child:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-child:nth-child(3) {
+  grid-row-start: 2;
+  grid-row-end: 4;
+} */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 300px) minmax(400px, 600px) 1fr;
+  grid-template-rows: 200px 1fr 150px;
+  gap: 10px;
+
+  min-height: 100vh;
+}
+
+header,
+nav,
+main,
+footer {
+  border: 5px solid green;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.nav {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.main {
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px auto auto 100px;
+  }
+
+  .header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .main {
+  }
+
+  .footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
 }
