@@ -4,10 +4,13 @@
 
 .outer-container {
   border: 2px solid green;
+  height: 400px;
 }
 
 .inner-block {
   border: 2px solid red;
+  width: 50px;
+  height: 50px;
 }
 
 .grid-parent {
@@ -16,11 +19,17 @@
   /* grid */
   /* px, %, vw, fr, minmax(320px, 800px) */
   /* repeat (фіксована кількість| автокількість (auto-fill/fit), ширина)*/
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
 
-  /* неявна сітка */
-  grid-auto-flow: row;
-  grid-auto-rows: 75px;
+  /* розташування елементів вздовж осей всередені комірки */
+  /* розташувати кожен елемент в верхньому правому куті*/
+  justify-items: end;
+  align-items: start;
+
+  /* розташування комірок вздовж осей */
+  justify-content: center;
+  align-content: center;
 }
 
 /* Задати сітку 4*4 по 200px рядки, */
